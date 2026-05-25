@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สมัครแข่งขัน Free Fire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-hex"></div>
+<div class="glow-top"></div>
+
+<div class="wrap">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="badge-event">🔥 TOURNAMENT REGISTRATION</div>
+    <h1 class="title">สมัครแข่งขัน<br><span>FREE FIRE</span></h1>
+    <p class="subtitle">กรอกข้อมูลให้ครบถ้วนเพื่อสมัครเข้าร่วมการแข่งขัน</p>
+    <div class="divider"><span>✦</span></div>
+  </header>
+
+  <!-- TEAM NAME -->
+  <div class="card">
+    <div class="card-head">
+      <div class="card-icon">🏆</div>
+      <div>
+        <div class="card-title">ข้อมูลทีม</div>
+        <div class="card-sub">Team Information</div>
+      </div>
+    </div>
+    <div class="field">
+      <label for="teamName">ชื่อทีม <span class="req">*</span></label>
+      <input type="text" id="teamName" class="input-lg" placeholder="กรอกชื่อทีมของคุณ" autocomplete="off">
+      <div class="err" id="err-teamName">⚠ กรุณากรอกชื่อทีม</div>
+    </div>
+  </div>
+
+  <!-- MAIN PLAYERS -->
+  <div class="card">
+    <div class="card-head">
+      <div class="card-icon">⚔️</div>
+      <div>
+        <div class="card-title">ผู้เล่นตัวจริง</div>
+        <div class="card-sub">Main Players — ต้องมีครบ 4 คน</div>
+      </div>
+    </div>
+    <div class="grid-2">
+
+      <div class="pcard">
+        <div class="pbadge captain">CAPTAIN</div>
+        <div class="pnum"><span></span>ผู้เล่นที่ 1</div>
+        <div class="field">
+          <label>ชื่อ-นามสกุล <span class="req">*</span></label>
+          <input type="text" id="name1" placeholder="ชื่อ นามสกุล" autocomplete="off">
+          <div class="err" id="err-name1">⚠ กรุณากรอกชื่อ</div>
+        </div>
+        <div class="field">
+          <label>ห้อง <span class="req">*</span></label>
+          <input type="text" id="room1" placeholder="เช่น ม.5/1" autocomplete="off">
+          <div class="err" id="err-room1">⚠ กรุณากรอกห้อง</div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pbadge">PLAYER 2</div>
+        <div class="pnum"><span></span>ผู้เล่นที่ 2</div>
+        <div class="field">
+          <label>ชื่อ-นามสกุล <span class="req">*</span></label>
+          <input type="text" id="name2" placeholder="ชื่อ นามสกุล" autocomplete="off">
+          <div class="err" id="err-name2">⚠ กรุณากรอกชื่อ</div>
+        </div>
+        <div class="field">
+          <label>ห้อง <span class="req">*</span></label>
+          <input type="text" id="room2" placeholder="เช่น ม.5/1" autocomplete="off">
+          <div class="err" id="err-room2">⚠ กรุณากรอกห้อง</div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pbadge">PLAYER 3</div>
+        <div class="pnum"><span></span>ผู้เล่นที่ 3</div>
+        <div class="field">
+          <label>ชื่อ-นามสกุล <span class="req">*</span></label>
+          <input type="text" id="name3" placeholder="ชื่อ นามสกุล" autocomplete="off">
+          <div class="err" id="err-name3">⚠ กรุณากรอกชื่อ</div>
+        </div>
+        <div class="field">
+          <label>ห้อง <span class="req">*</span></label>
+          <input type="text" id="room3" placeholder="เช่น ม.5/1" autocomplete="off">
+          <div class="err" id="err-room3">⚠ กรุณากรอกห้อง</div>
+        </div>
+      </div>
+
+      <div class="pcard">
+        <div class="pbadge">PLAYER 4</div>
+        <div class="pnum"><span></span>ผู้เล่นที่ 4</div>
+        <div class="field">
+          <label>ชื่อ-นามสกุล <span class="req">*</span></label>
+          <input type="text" id="name4" placeholder="ชื่อ นามสกุล" autocomplete="off">
+          <div class="err" id="err-name4">⚠ กรุณากรอกชื่อ</div>
+        </div>
+        <div class="field">
+          <label>ห้อง <span class="req">*</span></label>
+          <input type="text" id="room4" placeholder="เช่น ม.5/1" autocomplete="off">
+          <div class="err" id="err-room4">⚠ กรุณากรอกห้อง</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SUBSTITUTES -->
+  <div class="card">
+    <div class="card-head">
+      <div class="card-icon">🛡️</div>
+      <div>
+        <div class="card-title">ตัวสำรอง</div>
+        <div class="card-sub">Substitutes — ไม่บังคับ</div>
+      </div>
+    </div>
+
+    <button class="toggle-btn" id="toggleBtn" onclick="toggleSub()">
+      <span class="t-icon" id="tIcon">＋</span>
+      <span id="tText">เพิ่มข้อมูลตัวสำรอง (ไม่บังคับ)</span>
+    </button>
+
+    <div class="sub-wrap" id="subWrap">
+      <div class="grid-2">
+
+        <div class="pcard sub-card">
+          <div class="pbadge sub-badge">SUB 1</div>
+          <div class="pnum"><span></span>ตัวสำรองที่ 1</div>
+          <div class="field">
+            <label>ชื่อ-นามสกุล</label>
+            <input type="text" id="sub1" placeholder="ชื่อ นามสกุล (ถ้ามี)" autocomplete="off">
+          </div>
+          <div class="field">
+            <label>ห้อง</label>
+            <input type="text" id="subRoom1" placeholder="เช่น ม.5/1" autocomplete="off">
+          </div>
+        </div>
+
+        <div class="pcard sub-card">
+          <div class="pbadge sub-badge">SUB 2</div>
+          <div class="pnum"><span></span>ตัวสำรองที่ 2</div>
+          <div class="field">
+            <label>ชื่อ-นามสกุล</label>
+            <input type="text" id="sub2" placeholder="ชื่อ นามสกุล (ถ้ามี)" autocomplete="off">
+          </div>
+          <div class="field">
+            <label>ห้อง</label>
+            <input type="text" id="subRoom2" placeholder="เช่น ม.5/1" autocomplete="off">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="info-tip">
+      <span>💡</span>
+      ตัวสำรองเป็นตัวเลือกเสริม สามารถใส่ได้ 1 หรือ 2 คน
+    </div>
+  </div>
+
+  <!-- SUBMIT -->
+  <div class="submit-area">
+    <button class="btn-submit" id="submitBtn" onclick="submitForm()">
+      <span class="spinner" id="spinner"></span>
+      <span id="btnText">🔥 ยืนยันการสมัคร</span>
+    </button>
+
+    <div class="alert success" id="alertOk">
+      <div class="alert-icon">✅</div>
+      <div><strong id="okTeam"></strong> สมัครเรียบร้อยแล้ว!<br><small>ข้อมูลถูกบันทึกลง Google Sheets แล้ว</small></div>
+    </div>
+
+    <div class="alert error" id="alertErr">
+      <div class="alert-icon">❌</div>
+      <div id="errMsg">เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง</div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    Free Fire Tournament · ข้อมูลถูกส่งไปยัง Google Sheets โดยอัตโนมัติ
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
