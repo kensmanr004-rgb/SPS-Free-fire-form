@@ -6,6 +6,42 @@
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby0e_65BKQdSUGuUrpiwQ4LZ01fiE0SDJSsh1u2gPzvnFRNB8yVlnscRDdGIaZW_nTC/exec";
 // ════════════════════════════════════════════════
 
+/* ── FIRE PARTICLE SYSTEM ────────────────────── */
+(function spawnParticles() {
+  const colors = [
+    'rgba(255,120,0,',
+    'rgba(255,60,0,',
+    'rgba(255,180,0,',
+    'rgba(220,40,0,',
+    'rgba(255,220,80,',
+  ];
+  function spawn() {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const size  = Math.random() * 4 + 1;
+    const xPos  = Math.random() * 100;
+    const dur   = Math.random() * 6 + 4;
+    const delay = Math.random() * 4;
+    const color = colors[Math.floor(Math.random() * colors.length)];
+    const opacity = (Math.random() * .5 + .4).toFixed(2);
+    p.style.cssText = `
+      left:${xPos}%;
+      bottom:${Math.random()*15}%;
+      width:${size}px;
+      height:${size}px;
+      background:${color}${opacity});
+      box-shadow:0 0 ${size*2}px ${color}.8);
+      animation-duration:${dur}s;
+      animation-delay:-${delay}s;
+    `;
+    document.body.appendChild(p);
+    setTimeout(() => p.remove(), (dur + delay) * 1000);
+  }
+  setInterval(spawn, 300);
+  for (let i = 0; i < 20; i++) spawn();
+})();
+
+
 function toggleSub() {
   const btn  = document.getElementById("toggleBtn");
   const wrap = document.getElementById("subWrap");
